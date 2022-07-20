@@ -89,39 +89,46 @@ header{
     background-color: #DD0000;
     color:#FFFFFF;
 }
-.blog{
+/*-------------
+ Match Fixtures
+ ------------- */
+.fixtures{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-row-gap:23px;
     grid-column-gap:15px; ;
     margin-left: 15px;    
 }
-.blog-menu{
-    border:1px solid rgb(224, 224, 224);
-    width:200px;
+.match-details{
+    border: 1px solid rgb(236, 236, 236);
     border-radius: 5px;
+    width: 200px;
+    height:150px;
 }
-.blog-menu img{
-    width:200px;
-    height:125px;
+.match-between{
+    display: table;
+    justify-content: center;
+    margin: 10px;
 }
-.blog-menu a{
-    width:150px;
-    text-decoration: none;
-    border:1px solid #161616;
-    border-radius: 3px;
-    padding:3px;
+.match-between img{
+    display: table-cell;
+    vertical-align: middle;
+    margin: 10px;
+    width:60px;
+}
+.match-between h3{
+    display: table-cell;
+    vertical-align: middle;
     font-size: 10px;
 }
-.blog-content{
-    margin-left:7px;
-    
+.match-time h3{
+    font-size: 15px;
+    text-align: center;
 }
-.blog-bottom {
-    display: flex;
-    justify-content: space-around;
+.match-time p{
     font-size: 10px;
-    
+    color:#969696;
+    text-align: center;
 }
 .hidden-button-container{
     display:none;
@@ -131,7 +138,6 @@ header{
     background-color: #DD0000;
     color: #FFFFFF;
     margin: 10px;
-    margin-top: 30px;
     padding:7px 13px;
     border-radius: 5px;
 }
@@ -188,6 +194,7 @@ hr{
 .fa-youtube{
     color:#FF0000;
 }
+
 /* ---------------- 
 footer section end
 ------------------- */
@@ -198,7 +205,7 @@ footer section end
  ---------------- */
 
  /* -------------------------
- media query of small device
+ media query for small device
  ----------------------------- */
 @media only screen and (max-width:576px){
     body{
@@ -207,6 +214,7 @@ footer section end
     header{
         margin-bottom: 24px;
         margin-right: 12px;
+        margin-top: 30px;
         display: flex;
         justify-content: center;        
     }
@@ -216,7 +224,7 @@ footer section end
     }
     .header-section{
         width:90%;
-        height: 360px;
+        height: 370px;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -243,7 +251,7 @@ footer section end
     /* main section */
 
     .menu-container{
-        background-color:#FFFFFF;
+        background-color:transparent;
         width:60%;
         height:220px;
     }
@@ -252,34 +260,37 @@ footer section end
         flex-direction: column;
         align-items: center;
     } 
-    .blog{
+    .fixtures{
         display: grid;
         grid-template-columns: repeat(1,1fr);
             
     }
-    .blog-menu{
-        width:320px;
+    .match-details{
+        border: 1px solid rgb(236, 236, 236);
         border-radius: 5px;
+        width: 300px;
+        height:220px;
     }
-    .blog-menu img{
-        width:320px;
-        height:180px;
+    .match-between{
+        display: table;
+        justify-content: center;
+        margin: 10px;
     }
-    .blog-menu a{
-        width:170px;        
-        border-radius: 4px;
-        padding:4px;
-        font-size: 15px;
+    .match-between img{
+        display: table-cell;
+        vertical-align: middle;
+        margin: 10px;
+        width:110px;
     }
-    .blog-content{
-        margin-left:15px;
-        
+    .match-between h3{
+        font-size: 10px;
     }
-    .blog-bottom {
-        font-size: 15px;
-        
+    .match-time h3{
+        font-size: 20px;
     }
-     
+    .match-time p{
+        font-size: 20px;
+    } 
     footer{
         width: 100%;
     } 
@@ -310,7 +321,7 @@ footer section end
 }
 
 /* -------------------------
-meadia query for medium device
+meadia query of medium device
 ------------------------------ */
 
 @media only screen and (min-width:567px) and (max-width:768px) {
@@ -320,6 +331,7 @@ meadia query for medium device
     .header-section{
         width:90%;
         height: 370px;
+        border-radius: 15px;
     }
     .container{
         width:50%;
@@ -330,6 +342,11 @@ meadia query for medium device
         width:100%;
         margin-top:30px;
         
+    }
+    .main-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .menu-container{
         background-color:transparent;
@@ -343,38 +360,38 @@ meadia query for medium device
     }
     .side-menu{
         width:190px;
-    }
-    .main-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+        
+    } 
 
-    .blog{
+    .fixtures{
         display: grid;
         grid-template-columns: repeat(2,1fr);
             
     }
-    .blog-menu{
-        border:1px solid rgb(224, 224, 224);
-        width:300px;
+    .match-details{
         border-radius: 5px;
+        width: 320px;
+        height:250px;
     }
-    .blog-menu img{
-        width:300px;
-        height:150px;
+    .match-between{
+        display: table;
+        justify-content: center;
+        margin: 20px;
     }
-    .blog-content{
-        margin-left:7px;
-        
+    .match-between img{
+        margin: 10px;
+        width:120px;
     }
-    .blog-content{
-        margin-left:15px;
-        
+    .match-between h3{
+        font-size: 20px;
     }
-    .hidden-blog{
-        display: none;
+    .match-time h3{
+        font-size: 25px;
+        text-align: center;
     }
+    .match-time p{
+        font-size: 20px;
+    }  
     
     .hidden-button-container{
         display: block;
