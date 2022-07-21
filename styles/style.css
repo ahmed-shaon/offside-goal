@@ -31,6 +31,13 @@ header{
     margin-left:70px;
     margin-top:70px;
 }
+.container a:hover{
+    border-radius: 30px 10px;
+    transition: all 2s; 
+    display: inline-block;   
+    transform: scale(1.5,1.5);
+    background-color: #b10202b2;
+}
 .container p{
     color:#FFFFFF;
     font-size:13px;
@@ -353,6 +360,7 @@ meadia query for medium device
     .blog{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        margin-bottom: 50px;
             
     }
     .blog-menu{
@@ -372,9 +380,11 @@ meadia query for medium device
         margin-left:15px;
         
     }
-    .hidden-blog{
+    .blog .blog-menu:nth-of-type(7),
+    .blog .blog-menu:nth-of-type(8),
+    .blog .blog-menu:nth-of-type(9){
         display: none;
-    }
+    }   
     
     .hidden-button-container{
         display: block;
