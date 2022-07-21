@@ -270,7 +270,7 @@ footer section end
     } 
     .header-tittle:hover{
         transition: font-size 2s .5s;
-        font-size: 25px;
+        font-size: 22px;
     }
     .container{
         width:50%;
@@ -374,7 +374,7 @@ meadia query for medium device
     }
     .header-tittle:hover{
         transition: font-size 2s .5s;
-        font-size: 47px;
+        font-size: 44px;
     }
     .container{
         width:50%;
