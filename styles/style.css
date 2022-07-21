@@ -63,9 +63,9 @@ header paragraph animation
     font-size:50px;
     line-height: 98%;
 }
-.header-tittle:hover{
-    transition: font-size 2s .5s;
-    font-size: 55px;
+.headerd-div:hover{
+    transform: scale(1.2,1.2);
+    transition: all 2s;
 }
 .watch-button{
     text-decoration: none;
@@ -116,9 +116,18 @@ header paragraph animation
     border-radius: 5px;
     text-align: center;
 }
+.side-menu:hover{
+    background-color: rgb(146, 183, 221);
+}
 #different-menu-item{
     background-color: #DD0000;
     color:#FFFFFF;
+}
+#different-menu-item:hover{
+    /* background-color:#970303; */
+    background: linear-gradient(to right, #a10202 0%, #b41b06 100%);
+     /* background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); */
+    transition:background 2s;
 }
 .blog{
     display: grid;
@@ -147,14 +156,22 @@ header paragraph animation
 .blog-menu a{
     width:150px;
     text-decoration: none;
+    color: #6b6b6b;
     border:1px solid #161616;
     border-radius: 3px;
     padding:3px;
     font-size: 10px;
 }
+
 .blog-content{
     margin-left:7px;
     
+}
+.blog-content a:hover{
+    background-color: #B9B9B9;
+    color: #161616;
+    transform: scale(1.5,1.5);
+    transition: transform 1.5s;
 }
 .blog-bottom {
     display: flex;
@@ -221,13 +238,16 @@ hr{
     font-size: 30px;
 }
 /* social media icon color */
-.fa-facebook-square{
+.fa-facebook-square, .fa-linkedin, .fa-youtube{
+    color: grey;
+}
+.fa-facebook-square:hover{
     color:#3b5998;
 }
-.fa-linkedin{
+.fa-linkedin:hover{
     color:#0072b1;
 }
-.fa-youtube{
+.fa-youtube:hover{
     color:#FF0000;
 }
 /* ---------------- 
