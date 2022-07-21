@@ -47,6 +47,10 @@ header{
     color:#FFFFFF;
     font-size:50px;
 }
+.header-tittle:hover{
+    transition: font-size 2s .5s;
+    font-size: 55px;
+}
 .watch-button{
     text-decoration: none;
     background-color: #DD0000;
@@ -107,6 +111,7 @@ header{
     border:1px solid rgb(224, 224, 224);
     width:200px;
     border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(224, 224, 224);;
 }
 .blog-menu img{
     width:200px;
