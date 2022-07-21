@@ -133,6 +133,13 @@ header paragraph animation
     border-radius: 5px;
     box-shadow: 3px 3px 3px rgb(224, 224, 224);;
 }
+
+/* blog animation */
+
+.blog-menu:hover{
+    transform: scale(1.1,1.1);
+    transition: all 2s;
+}
 .blog-menu img{
     width:200px;
     height:125px;
