@@ -1,3 +1,11 @@
+
+/*-------------------------
+
+Style For Website 1 
+
+------------------------ */
+
+
 /*-------------
  import font
  ------------- */
@@ -22,7 +30,7 @@ header{
 .header-section{
     background-color: #161616;
     width:90%;
-    height:456px;
+    height:470px;
     border-radius: 30px;
     display: flex;
 }
@@ -41,11 +49,19 @@ header{
 .container p{
     color:#FFFFFF;
     font-size:13px;
-    margin-bottom:20px;
+    margin-bottom:30px;
+}
+/* ---------------------
+header paragraph animation 
+-------------------------*/
+.container p:hover{
+    transform: rotateX(360deg);
+    transition: all 2s .4s;
 }
 .header-tittle{
     color:#FFFFFF;
     font-size:50px;
+    line-height: 98%;
 }
 .header-tittle:hover{
     transition: font-size 2s .5s;
@@ -142,6 +158,8 @@ header{
 .hidden-button-container{
     display:none;
 }
+/* ----------------
+this button is for only tablet ---------------------*/
 .hidden-button-container a{
     text-decoration: none;
     background-color: #DD0000;
@@ -195,6 +213,7 @@ hr{
     margin-left: 20px;
     font-size: 30px;
 }
+/* social media icon color */
 .fa-facebook-square{
     color:#3b5998;
 }
@@ -242,6 +261,10 @@ footer section end
         color:#FFFFFF;
         font-size:20px;
     } 
+    .header-tittle:hover{
+        transition: font-size 2s .5s;
+        font-size: 25px;
+    }
     .container{
         width:50%;
         margin-top:0;
@@ -295,7 +318,9 @@ footer section end
         font-size: 15px;
         
     }
-     
+
+    /* footer design  */
+
     footer{
         width: 100%;
     } 
@@ -312,6 +337,8 @@ footer section end
         margin-bottom: 30px;
         margin-left: 0px;
     }
+    /* icon design for small device */
+
     .icon{
         display: flex;
         flex-direction: column;
@@ -330,12 +357,17 @@ meadia query for medium device
 ------------------------------ */
 
 @media only screen and (min-width:567px) and (max-width:768px) {
-    .header-tittle{
-        font-size: 40px;
-    }
+    
     .header-section{
         width:90%;
         height: 370px;
+    }
+    .header-tittle{
+        font-size: 40px;
+    }
+    .header-tittle:hover{
+        transition: font-size 2s .5s;
+        font-size: 47px;
     }
     .container{
         width:50%;
